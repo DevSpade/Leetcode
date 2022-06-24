@@ -1,38 +1,25 @@
-<h2><a href="https://leetcode.com/problems/two-sum/">1. Two Sum</a></h2><h3>Easy</h3><hr><div><p>Given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+# TwoSum
 
-<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
+주요 포인트는 hash를 사용해서 시간 복잡도를 줄이는 것이다. 
 
-<p>You can return the answer in any order.</p>
+python의 dictionary는 내부가 hash로 이루어져있다. 
+시간 복잡도를 보면 다음과 같다. 
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+|연산|시간복잡도|기능|
+|---|---|---|
+|len(k)|O(1)|개수 리턴|
+|a[key]|O(1)|해당 키 조회 및 value 리턴|
+|a(key) = value |O(1)|key/value 삽입|
+|key in k |O(1)|키가 존재 하는지 확인|
 
-<pre><strong>Input:</strong> nums = [2,7,11,15], target = 9
-<strong>Output:</strong> [0,1]
-<strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].
-</pre>
 
-<p><strong>Example 2:</strong></p>
+    def twoSum(self, nums, target):
+        table = {}
 
-<pre><strong>Input:</strong> nums = [3,2,4], target = 6
-<strong>Output:</strong> [1,2]
-</pre>
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in table:
+                return [i, table[complement]]
+            else:
+                table[num] = 
 
-<p><strong>Example 3:</strong></p>
-
-<pre><strong>Input:</strong> nums = [3,3], target = 6
-<strong>Output:</strong> [0,1]
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
-	<li><strong>Only one valid answer exists.</strong></li>
-</ul>
-
-<p>&nbsp;</p>
-<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than&nbsp;<code>O(n<sup>2</sup>)&nbsp;</code>time complexity?</div>
