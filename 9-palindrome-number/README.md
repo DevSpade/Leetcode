@@ -1,39 +1,14 @@
-<h2><a href="https://leetcode.com/problems/palindrome-number/">9. Palindrome Number</a></h2><h3>Easy</h3><hr><div><p>Given an integer <code>x</code>, return <code>true</code> if <code>x</code> is palindrome integer.</p>
+# 9-palindrome
 
-<p>An integer is a <strong>palindrome</strong> when it reads the same backward as forward.</p>
+문제는 숫자를 가지고 회문인지 아닌지 판단하는 것이다.
+제일 먼저 음수는 회문이 아니라는 것을 친절하게 예제에서 나타내줬다. ( 음수 제외 )
 
-<ul>
-	<li>For example, <code>121</code> is a palindrome while <code>123</code> is not.</li>
-</ul>
+제일 먼저 생각해볼 수 있는 것은 case를 나누는 것이다.
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+case1 -> 자리수가 홀수의 경우  
+case2 -> 자리수가 짝수의 경우  
+  
+case1 :  '12321'  
+3을 기준으로 
 
-<pre><strong>Input:</strong> x = 121
-<strong>Output:</strong> true
-<strong>Explanation:</strong> 121 reads as 121 from left to right and from right to left.
-</pre>
 
-<p><strong>Example 2:</strong></p>
-
-<pre><strong>Input:</strong> x = -121
-<strong>Output:</strong> false
-<strong>Explanation:</strong> From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre><strong>Input:</strong> x = 10
-<strong>Output:</strong> false
-<strong>Explanation:</strong> Reads 01 from right to left. Therefore it is not a palindrome.
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>-2<sup>31</sup>&nbsp;&lt;= x &lt;= 2<sup>31</sup>&nbsp;- 1</code></li>
-</ul>
-
-<p>&nbsp;</p>
-<strong>Follow up:</strong> Could you solve it without converting the integer to a string?</div>
