@@ -6,5 +6,5 @@ class Solution:
             if int(val) > maxNum : maxNum = int(val)     
         return maxNum        
 
-a = Solution()
-print( a.minPartitions("27346209830709182346") )
+#a = Solution()
+#print( a.minPartitions("27346209830709182346") )
