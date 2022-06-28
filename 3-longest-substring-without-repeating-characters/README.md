@@ -1,33 +1,6 @@
-<h2><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">3. Longest Substring Without Repeating Characters</a></h2><h3>Medium</h3><hr><div><p>Given a string <code>s</code>, find the length of the <strong>longest substring</strong> without repeating characters.</p>
+​# 3. Longest Substring Without Repeating Characters 
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
-
-<pre><strong>Input:</strong> s = "abcabcbb"
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> The answer is "abc", with the length of 3.
-</pre>
-
-<p><strong>Example 2:</strong></p>
-
-<pre><strong>Input:</strong> s = "bbbbb"
-<strong>Output:</strong> 1
-<strong>Explanation:</strong> The answer is "b", with the length of 1.
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre><strong>Input:</strong> s = "pwwkew"
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> The answer is "wke", with the length of 3.
-Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
-	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
-</ul>
-</div>
+이 문제는 중복되지 않는 연속하는 문자열이 최대 몇개인지 확인하는 것이다.  
+이 문제는 1647번과 유사하다과 생각해서 비슷한 접근 방식으로 문제를 풀었다.  
+예를들어 set을 하나 만든 뒤에 스트링을 하나씩 넣어주면서 중복이 있나 없나 검사하고 중복이 있으면  
+다시 처음문자열+1 만큼 돌아가서 시작하는 것이다. 이렇게 되면 상당히 오랫동안 탐색을 해야하는 경우가 생길 수 있다.  더 좋은 방법이 있을수있으니 해답을 보고 추가할 것   
