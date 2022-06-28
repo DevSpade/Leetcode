@@ -21,7 +21,7 @@ def lengthOfLongestSubstring(s: str) -> int:
             startPoint += 1
             point = startPoint
 
-    return 0
+    return 
 
 a = "abcabcbb"   
 lengthOfLongestSubstring(a)
