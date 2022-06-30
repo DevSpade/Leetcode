@@ -13,5 +13,7 @@ class Solution:
         for key,val in dictionary.items() :
             for i in range(val) :
                 nums[point] = int(key)
-                point += 1        
+                point += 1      
+                
+        # 이중 for loop는 좋은 답이 아님. for loop 하나만으로 푸는 방법이 있을듯 
         
