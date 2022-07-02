@@ -15,7 +15,7 @@ g
         nxtPair = curr.next.next
         second = curr.next
 
-        # 이렇게해주면 second는 curr의 1,2 위치가 바뀐게 된다.
+        # 이렇게해주면 second는 curr의 1,2 위치가 바뀐게 된다.f
         second.next = curr
         # 이제 바뀐 위치를 second가 2->1 순으로 저장하고 있고,
         # curr에는 그 다음 노드 즉 3번째 노드를 저정한다.
